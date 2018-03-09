@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: #92efa0;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#scrollBtn:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.parallax {
+    background-image: url('http://i.imgur.com/H2rckK2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+}
+
+.navbar-words:hover {
+    cursor: pointer;
+}
+
+#page-wrap {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.title-title {
+    color: black;
+    font-family: Impact;
+    text-align: center;
+    padding: 50px;
+    font-size: 65px;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.champ-column {
+    float: left;
+    width: 16%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.champ-card {
+    box-shadow: 0 4px 8px 0 rgb(61, 62, 70);
+}
+
+.container {
+    padding: 0 20px;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.champ-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.champ-button:hover {
+    background-color: darkgreen;
+}

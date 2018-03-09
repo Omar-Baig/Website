@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Omar Baig's Porfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mycss.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavigationBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand left-line-out" href="#" style="color:black">Omar Baig</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right navbar-collapse collapse" id="NavigationBar">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Works</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Skills</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="green-divider"></div>
+
+
+
+    <!-- Videoround -->
+    <video autoplay muted loop id="Plexus_Video">
+       <source src="Plexus_Video.mp4" type="video/mp4">        
+    </video>
+
+    <div class="main-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="container-fluid works-image-container flip-container">
+                    <div class="flipper">
+                        <img src="Profile.jpg" class="container-fluid works-image front">
+                        <p class="container-fluid works-text">This is a clone of a royalty-free image website. It showcases images of different heights and widths. While working on this project I learned alot about the responsive nature of websites and the content that goes in them. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid works-image-container">
+                    <img src="Profile.jpg" class="container-fluid works-image ">
+                    <p class="container-fluid works-text">This is a clone of a royalty-free image website. It showcases images of different heights and widths. While working on this project I learned alot about the responsive nature of websites and the content that goes in them.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid works-image-container">
+                    <img src="Profile.jpg" class="container-fluid works-image ">
+                    <p class="container-fluid works-text">This is a clone of a royalty-free image website. It showcases images of different heights and widths. While working on this project I learned alot about the responsive nature of websites and the content that goes in them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    //video
+    var video = document.getElementById("Plexus_Video");
+    //Button
+    var btn = document.getElementById("Video_Btn");
+    //Pause/Play Video
+    function Video_PausePlay() {
+        if (video.paused) {
+            video.play();
+            btn.innterHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }   
+
+
+</script>
+
+</html>

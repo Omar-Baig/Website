@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#Plexus_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.main-center {
+    margin: 50px 100px
+}
+
+.green-divider {
+    height: 3px;
+    background-color: green;
+}
+
+.sub-name {
+    color: white;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.sub-name:first-of-type {
+    animation: showup 9s infinite;
+}
+
+.sub-name:last-of-type {
+    animation: reveal 9s infinite;
+    width: 0px;
+    margin: auto;
+}
+
+.sub-name:last-of-type span {
+    animation: slidein 9s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 355px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}
+
+.Intro {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+    height: auto;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.glyphicon {
+    color: green;
+}
+
+.container-fluid {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.navbar {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 3px;
+    background-color: white;
+    z-index: 1;
+}
+
+.left-line-out {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    color: green;
+}
+
+.left-line-out:after {
+    content: '';
+    display: block;
+    margin-top: 2px;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.left-line-out:hover:after {
+    width: 100%;
+    background: green;
+}
+
+.works {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.works-text {
+    width: 100%;
+    min-width: 55%;
+}
+
+.works-image {
+    width: 100%;
+    min-width: 55%;
+}
+
+.works-image-container {
+    border: 1px solid white;
+    width: 85%;
+}
